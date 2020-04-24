@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 4
 Title "Micro Drone MLB"
 Date ""
 Rev "1"
@@ -14,36 +14,334 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Sensor_Motion:MPU-9250 U3
-U 1 1 5E98AAA0
-P 8850 2300
-F 0 "U3" H 8850 1311 50  0000 C CNN
-F 1 "MPU-9250" H 8850 1220 50  0000 C CNN
-F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 8850 1300 50  0001 C CNN
-F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 8850 2150 50  0001 C CNN
-	1    8850 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensor:BME280 U2
-U 1 1 5E98B73A
-P 8500 4750
-F 0 "U2" H 8071 4796 50  0000 R CNN
-F 1 "BME280" H 8071 4705 50  0000 R CNN
-F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 10000 4300 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf" H 8500 4550 50  0001 C CNN
-	1    8500 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L MCU_Module:PocketBeagle U1
 U 1 1 5E98C13D
-P 4100 3750
-F 0 "U1" H 4100 1461 50  0000 C CNN
-F 1 "PocketBeagle" H 4100 1370 50  0000 C CNN
-F 2 "Module:BeagleBoard_PocketBeagle" H 4100 3750 50  0001 C CNN
-F 3 "https://github.com/beagleboard/pocketbeagle/wiki/System-Reference-Manual" H 5800 2450 50  0001 C CNN
-	1    4100 3750
+P 6800 3600
+F 0 "U1" H 5950 1450 50  0000 C CNN
+F 1 "PocketBeagle" H 7450 1450 50  0000 C CNN
+F 2 "Module:BeagleBoard_PocketBeagle" H 6800 3600 50  0001 C CNN
+F 3 "https://github.com/beagleboard/pocketbeagle/wiki/System-Reference-Manual" H 8500 2300 50  0001 C CNN
+	1    6800 3600
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 1000 3000 1950 1350
+U 5E9DC684
+F0 "sensors" 50
+F1 "sensors.sch" 50
+F2 "MPU_MOSI_SDA" I R 2950 3100 50 
+F3 "MPU_MISO" I R 2950 3200 50 
+F4 "MPU_SCLK_SCL" I R 2950 3300 50 
+F5 "MPU_CS" I R 2950 3400 50 
+F6 "BME_MISO" I R 2950 4050 50 
+F7 "BME_SCLK_SCL" I R 2950 4150 50 
+F8 "BME_MOSI_SDA" I R 2950 3950 50 
+F9 "BME_CS" I R 2950 4250 50 
+$EndSheet
+$Sheet
+S 1000 1000 1950 1350
+U 5E9DC864
+F0 "power" 50
+F1 "power.sch" 50
+$EndSheet
+$Comp
+L power:+5V #PWR0101
+U 1 1 5E9E3C7C
+P 6200 1000
+F 0 "#PWR0101" H 6200 850 50  0001 C CNN
+F 1 "+5V" H 6215 1173 50  0000 C CNN
+F 2 "" H 6200 1000 50  0001 C CNN
+F 3 "" H 6200 1000 50  0001 C CNN
+	1    6200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5E9E54F2
+P 7100 1000
+F 0 "#PWR0102" H 7100 850 50  0001 C CNN
+F 1 "+3V3" H 7115 1173 50  0000 C CNN
+F 2 "" H 7100 1000 50  0001 C CNN
+F 3 "" H 7100 1000 50  0001 C CNN
+	1    7100 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1000 7100 1100
+Wire Wire Line
+	7000 1400 7000 1350
+Wire Wire Line
+	7000 1350 7100 1350
+Connection ~ 7100 1350
+Wire Wire Line
+	7100 1350 7100 1400
+Wire Wire Line
+	7800 3700 8350 3700
+Wire Wire Line
+	7800 3800 8350 3800
+Text Label 8350 3700 2    50   ~ 0
+I2C_SCL
+Text Label 8350 3800 2    50   ~ 0
+I2C_SDA
+Wire Wire Line
+	7800 4000 8350 4000
+Wire Wire Line
+	7800 4100 8350 4100
+Text Label 8350 4000 2    50   ~ 0
+UART0_TX
+Text Label 8350 4100 2    50   ~ 0
+UART0_RX
+Wire Wire Line
+	7800 2900 8350 2900
+Wire Wire Line
+	7800 3000 8350 3000
+Wire Wire Line
+	7800 3100 8350 3100
+Wire Wire Line
+	7800 3200 8350 3200
+Text Label 8350 2900 2    50   ~ 0
+SPI1_CS0
+Text Label 8350 3000 2    50   ~ 0
+SPI1_CLK
+Text Label 8350 3100 2    50   ~ 0
+SPI1_MISO
+Text Label 8350 3200 2    50   ~ 0
+SPI1_MOSI
+$Comp
+L power:GND #PWR0103
+U 1 1 5EA17D55
+P 6700 6150
+F 0 "#PWR0103" H 6700 5900 50  0001 C CNN
+F 1 "GND" H 6705 5977 50  0000 C CNN
+F 2 "" H 6700 6150 50  0001 C CNN
+F 3 "" H 6700 6150 50  0001 C CNN
+	1    6700 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 6150 6700 5800
+Wire Wire Line
+	5800 4400 5300 4400
+Wire Wire Line
+	5800 4500 5300 4500
+Wire Wire Line
+	5800 4600 5300 4600
+Wire Wire Line
+	5800 4700 5300 4700
+Text Label 5300 4400 0    50   ~ 0
+RC_OUT_3
+Text Label 5300 4500 0    50   ~ 0
+RC_OUT_5
+Text Label 5300 4600 0    50   ~ 0
+SPI1_CS1
+Text Label 5300 4700 0    50   ~ 0
+RC_OUT_2
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5EA355A8
+P 5550 1050
+F 0 "TP1" H 5608 1168 50  0000 L CNN
+F 1 "TP_5V" H 5608 1077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5750 1050 50  0001 C CNN
+F 3 "~" H 5750 1050 50  0001 C CNN
+	1    5550 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1100 5550 1050
+Wire Wire Line
+	6200 1000 6200 1100
+$Comp
+L Device:C_Small C?
+U 1 1 5EA377DA
+P 5550 1250
+AR Path="/5E9DC864/5EA377DA" Ref="C?"  Part="1" 
+AR Path="/5EA377DA" Ref="C1"  Part="1" 
+F 0 "C1" H 5458 1296 50  0000 R CNN
+F 1 "47uF" H 5458 1205 50  0000 R CNN
+F 2 "" H 5550 1250 50  0001 C CNN
+F 3 "~" H 5550 1250 50  0001 C CNN
+	1    5550 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1150 5550 1100
+Connection ~ 5550 1100
+Wire Wire Line
+	5550 1100 6200 1100
+Connection ~ 6200 1100
+Wire Wire Line
+	6200 1100 6200 1400
+$Comp
+L power:GND #PWR0104
+U 1 1 5EA3869D
+P 5550 1400
+F 0 "#PWR0104" H 5550 1150 50  0001 C CNN
+F 1 "GND" H 5555 1227 50  0000 C CNN
+F 2 "" H 5550 1400 50  0001 C CNN
+F 3 "" H 5550 1400 50  0001 C CNN
+	1    5550 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1400 5550 1350
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5EA3973C
+P 7350 1050
+F 0 "TP2" H 7408 1168 50  0000 L CNN
+F 1 "TP_3V3" H 7408 1077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7550 1050 50  0001 C CNN
+F 3 "~" H 7550 1050 50  0001 C CNN
+	1    7350 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 1050 7350 1100
+Wire Wire Line
+	7350 1100 7100 1100
+Connection ~ 7100 1100
+Wire Wire Line
+	7100 1100 7100 1350
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5EA3A39A
+P 7750 1050
+F 0 "TP3" H 7808 1168 50  0000 L CNN
+F 1 "TP_VOUT" H 7808 1077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7950 1050 50  0001 C CNN
+F 3 "~" H 7950 1050 50  0001 C CNN
+	1    7750 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1400 7300 1350
+Wire Wire Line
+	7300 1350 7400 1350
+Wire Wire Line
+	7400 1350 7400 1400
+Wire Wire Line
+	7750 1350 7750 1050
+Wire Wire Line
+	7400 1350 7750 1350
+Connection ~ 7400 1350
+NoConn ~ 7800 3500
+NoConn ~ 7800 3400
+Wire Wire Line
+	7800 4300 8350 4300
+Wire Wire Line
+	7800 4400 8350 4400
+Text Label 8350 4300 2    50   ~ 0
+UART4_TX
+Text Label 8350 4400 2    50   ~ 0
+UART4_RX
+Wire Wire Line
+	7800 2500 8350 2500
+Wire Wire Line
+	7800 2600 8350 2600
+Text Label 8350 2500 2    50   ~ 0
+UART2_TX
+Text Label 8350 2600 2    50   ~ 0
+UART2_RX
+$Sheet
+S 1000 5000 1950 1350
+U 5EA3E6DB
+F0 "telemetry" 50
+F1 "telemetry.sch" 50
+$EndSheet
+NoConn ~ 7800 2700
+NoConn ~ 7800 2400
+Wire Wire Line
+	7800 4600 8350 4600
+Wire Wire Line
+	7800 4700 8350 4700
+Text Label 8350 4600 2    50   ~ 0
+PWM0
+Text Label 8350 4700 2    50   ~ 0
+PWM1
+NoConn ~ 5800 5500
+NoConn ~ 5800 5300
+NoConn ~ 7800 4900
+NoConn ~ 5800 4200
+NoConn ~ 5800 4100
+NoConn ~ 5800 3900
+NoConn ~ 5800 3800
+NoConn ~ 5800 3700
+Wire Wire Line
+	5800 3500 5300 3500
+NoConn ~ 5800 3600
+Wire Wire Line
+	5800 4000 5300 4000
+Text Label 5300 3500 0    50   ~ 0
+AIN_1V8
+Text Label 5300 4000 0    50   ~ 0
+AIN_3V3
+NoConn ~ 5800 3300
+NoConn ~ 5800 3200
+NoConn ~ 5800 3100
+NoConn ~ 5800 3000
+NoConn ~ 5800 2900
+NoConn ~ 5800 2800
+NoConn ~ 5800 2700
+NoConn ~ 5800 2600
+NoConn ~ 5800 2500
+NoConn ~ 5800 2400
+NoConn ~ 5800 2300
+NoConn ~ 5800 2200
+Wire Wire Line
+	5800 1800 5350 1800
+Wire Wire Line
+	5800 1900 5350 1900
+Wire Wire Line
+	5800 2000 5350 2000
+Wire Wire Line
+	5800 2100 5350 2100
+Text Label 5350 1800 0    50   ~ 0
+GPIO20
+Text Label 5350 1900 0    50   ~ 0
+GPIO23
+Text Label 5350 2000 0    50   ~ 0
+GPIO26
+Text Label 5350 2100 0    50   ~ 0
+GPIO27
+Wire Wire Line
+	2950 3100 3400 3100
+Wire Wire Line
+	2950 3200 3400 3200
+Wire Wire Line
+	2950 3300 3400 3300
+Wire Wire Line
+	2950 3400 3400 3400
+Wire Wire Line
+	2950 3950 3400 3950
+Wire Wire Line
+	2950 4050 3400 4050
+Wire Wire Line
+	2950 4150 3400 4150
+Wire Wire Line
+	2950 4250 3400 4250
+Text Label 3400 3100 2    50   ~ 0
+SPI1_MOSI
+Text Label 3400 3200 2    50   ~ 0
+SPI1_MISO
+Text Label 3400 3300 2    50   ~ 0
+SPI1_CLK
+Text Label 3400 3400 2    50   ~ 0
+SPI1_CS1
+Text Label 3400 3950 2    50   ~ 0
+SPI1_MOSI
+Text Label 3400 4050 2    50   ~ 0
+SPI1_MISO
+Text Label 3400 4150 2    50   ~ 0
+SPI1_SCLK
+Text Label 3400 4250 2    50   ~ 0
+SPI1_CS0
+Wire Wire Line
+	5800 4800 5300 4800
+Wire Wire Line
+	5800 4900 5300 4900
+Text Label 5300 4800 0    50   ~ 0
+RC_OUT_4
+Text Label 5300 4900 0    50   ~ 0
+RC_OUT_6
 $EndSCHEMATC

@@ -1,0 +1,147 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LM1085-5.0 U4
+U 1 1 5E9DE6A6
+P 3800 1500
+F 0 "U4" H 3800 1742 50  0000 C CNN
+F 1 "LM1085-5.0" H 3800 1651 50  0000 C CNN
+F 2 "" H 3800 1750 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1085.pdf" H 3800 1500 50  0001 C CNN
+	1    3800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5EA0D381
+P 1400 1600
+F 0 "J1" H 1318 1275 50  0000 C CNN
+F 1 "BATT_IN" H 1318 1366 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P7.62mm_Drill2mm" H 1400 1600 50  0001 C CNN
+F 3 "~" H 1400 1600 50  0001 C CNN
+	1    1400 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5EA0DFC6
+P 1700 1750
+F 0 "#PWR0105" H 1700 1500 50  0001 C CNN
+F 1 "GND" H 1705 1577 50  0000 C CNN
+F 2 "" H 1700 1750 50  0001 C CNN
+F 3 "" H 1700 1750 50  0001 C CNN
+	1    1700 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1750 1700 1600
+Wire Wire Line
+	1700 1600 1600 1600
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5EA0FB26
+P 2500 1050
+F 0 "J2" V 2464 862 50  0000 R CNN
+F 1 "PWR_SEL" V 2373 862 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2500 1050 50  0001 C CNN
+F 3 "~" H 2500 1050 50  0001 C CNN
+	1    2500 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 1500 2500 1500
+Wire Wire Line
+	2500 1500 2500 1250
+Wire Wire Line
+	2400 1250 2400 3350
+Wire Wire Line
+	2400 3350 3500 3350
+Wire Wire Line
+	2600 1250 2600 1500
+$Comp
+L power:GND #PWR0106
+U 1 1 5EA12494
+P 3800 1950
+F 0 "#PWR0106" H 3800 1700 50  0001 C CNN
+F 1 "GND" H 3805 1777 50  0000 C CNN
+F 2 "" H 3800 1950 50  0001 C CNN
+F 3 "" H 3800 1950 50  0001 C CNN
+	1    3800 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1950 3800 1900
+Wire Wire Line
+	4500 1500 4500 1250
+$Comp
+L power:+5V #PWR0107
+U 1 1 5EA12971
+P 4500 1250
+F 0 "#PWR0107" H 4500 1100 50  0001 C CNN
+F 1 "+5V" H 4515 1423 50  0000 C CNN
+F 2 "" H 4500 1250 50  0001 C CNN
+F 3 "" H 4500 1250 50  0001 C CNN
+	1    4500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5EA13425
+P 3300 1700
+F 0 "C2" H 3208 1746 50  0000 R CNN
+F 1 "C_Small" H 3208 1655 50  0000 R CNN
+F 2 "" H 3300 1700 50  0001 C CNN
+F 3 "~" H 3300 1700 50  0001 C CNN
+	1    3300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1500 3300 1500
+Wire Wire Line
+	3300 1600 3300 1500
+Connection ~ 3300 1500
+Wire Wire Line
+	3300 1500 3500 1500
+Wire Wire Line
+	3300 1800 3300 1900
+Wire Wire Line
+	3300 1900 3800 1900
+Connection ~ 3800 1900
+Wire Wire Line
+	3800 1900 3800 1800
+Wire Wire Line
+	4300 1500 4300 1600
+Wire Wire Line
+	4300 1900 4300 1800
+$Comp
+L Device:C_Small C3
+U 1 1 5EA150F7
+P 4300 1700
+F 0 "C3" H 4392 1746 50  0000 L CNN
+F 1 "C_Small" H 4392 1655 50  0000 L CNN
+F 2 "" H 4300 1700 50  0001 C CNN
+F 3 "~" H 4300 1700 50  0001 C CNN
+	1    4300 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 1500
+Wire Wire Line
+	4300 1500 4500 1500
+Wire Wire Line
+	4100 1500 4300 1500
+Wire Wire Line
+	3800 1900 4300 1900
+$EndSCHEMATC
