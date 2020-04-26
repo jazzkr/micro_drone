@@ -1,0 +1,292 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Motion:MPU-9250 U2
+U 1 1 5E9DF27F
+P 3100 2550
+AR Path="/5E9DC684/5E9DF27F" Ref="U2"  Part="1" 
+AR Path="/5EA3E6DB/5E9DF27F" Ref="U?"  Part="1" 
+F 0 "U2" H 2650 1800 50  0000 C CNN
+F 1 "MPU-9250" H 3400 1800 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 3100 1550 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 3100 2400 50  0001 C CNN
+	1    3100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor:BME280 U3
+U 1 1 5E9DF285
+P 3150 5400
+AR Path="/5E9DC684/5E9DF285" Ref="U3"  Part="1" 
+AR Path="/5EA3E6DB/5E9DF285" Ref="U?"  Part="1" 
+F 0 "U3" H 2721 5446 50  0000 R CNN
+F 1 "BME280" H 2721 5355 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 4650 4950 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf" H 3150 5200 50  0001 C CNN
+	1    3150 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EA7141D
+P 3000 1300
+F 0 "#PWR?" H 3000 1150 50  0001 C CNN
+F 1 "+3V3" H 3015 1473 50  0000 C CNN
+F 2 "" H 3000 1300 50  0001 C CNN
+F 3 "" H 3000 1300 50  0001 C CNN
+	1    3000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EA72BD4
+P 3050 4500
+F 0 "#PWR?" H 3050 4350 50  0001 C CNN
+F 1 "+3V3" H 3065 4673 50  0000 C CNN
+F 2 "" H 3050 4500 50  0001 C CNN
+F 3 "" H 3050 4500 50  0001 C CNN
+	1    3050 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1650 3000 1550
+Wire Wire Line
+	3250 4800 3250 4700
+Wire Wire Line
+	3250 4700 3050 4700
+Connection ~ 3050 4700
+Wire Wire Line
+	3050 4700 3050 4800
+Wire Wire Line
+	3200 1650 3200 1550
+Wire Wire Line
+	3200 1550 3000 1550
+Connection ~ 3000 1550
+$Comp
+L Device:C_Small C?
+U 1 1 5EA73DF2
+P 2550 4750
+AR Path="/5E9DC864/5EA73DF2" Ref="C?"  Part="1" 
+AR Path="/5EA73DF2" Ref="C?"  Part="1" 
+AR Path="/5E9DC684/5EA73DF2" Ref="C?"  Part="1" 
+F 0 "C?" H 2458 4796 50  0000 R CNN
+F 1 "100nF" H 2458 4705 50  0000 R CNN
+F 2 "" H 2550 4750 50  0001 C CNN
+F 3 "~" H 2550 4750 50  0001 C CNN
+	1    2550 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA7446C
+P 2550 4950
+F 0 "#PWR?" H 2550 4700 50  0001 C CNN
+F 1 "GND" H 2555 4777 50  0000 C CNN
+F 2 "" H 2550 4950 50  0001 C CNN
+F 3 "" H 2550 4950 50  0001 C CNN
+	1    2550 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4500 3050 4600
+$Comp
+L Device:C_Small C?
+U 1 1 5EA73A6B
+P 2250 1550
+AR Path="/5E9DC864/5EA73A6B" Ref="C?"  Part="1" 
+AR Path="/5EA73A6B" Ref="C?"  Part="1" 
+AR Path="/5E9DC684/5EA73A6B" Ref="C?"  Part="1" 
+F 0 "C?" H 2158 1596 50  0000 R CNN
+F 1 "100nF" H 2158 1505 50  0000 R CNN
+F 2 "" H 2250 1550 50  0001 C CNN
+F 3 "~" H 2250 1550 50  0001 C CNN
+	1    2250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1300 3000 1350
+Wire Wire Line
+	2250 1350 2250 1450
+Wire Wire Line
+	3050 4600 2550 4600
+Wire Wire Line
+	2550 4600 2550 4650
+Connection ~ 3050 4600
+Wire Wire Line
+	3050 4600 3050 4700
+Wire Wire Line
+	2550 4850 2550 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5EA77C58
+P 2250 1700
+F 0 "#PWR?" H 2250 1450 50  0001 C CNN
+F 1 "GND" H 2255 1527 50  0000 C CNN
+F 2 "" H 2250 1700 50  0001 C CNN
+F 3 "" H 2250 1700 50  0001 C CNN
+	1    2250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1650 2250 1700
+Wire Wire Line
+	2250 1350 3000 1350
+Connection ~ 3000 1350
+Wire Wire Line
+	3000 1350 3000 1550
+NoConn ~ 3800 2250
+$Comp
+L power:GND #PWR?
+U 1 1 5EA78CFF
+P 3100 3550
+F 0 "#PWR?" H 3100 3300 50  0001 C CNN
+F 1 "GND" H 3105 3377 50  0000 C CNN
+F 2 "" H 3100 3550 50  0001 C CNN
+F 3 "" H 3100 3550 50  0001 C CNN
+	1    3100 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3550 3100 3450
+$Comp
+L power:GND #PWR?
+U 1 1 5EA79BF7
+P 3050 6100
+F 0 "#PWR?" H 3050 5850 50  0001 C CNN
+F 1 "GND" H 3055 5927 50  0000 C CNN
+F 2 "" H 3050 6100 50  0001 C CNN
+F 3 "" H 3050 6100 50  0001 C CNN
+	1    3050 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 6100 3050 6050
+Wire Wire Line
+	3250 6000 3250 6050
+Wire Wire Line
+	3250 6050 3050 6050
+Connection ~ 3050 6050
+Wire Wire Line
+	3050 6050 3050 6000
+NoConn ~ 3800 2450
+NoConn ~ 3800 2550
+$Comp
+L Device:C_Small C?
+U 1 1 5EA7B1AC
+P 4300 2750
+AR Path="/5E9DC864/5EA7B1AC" Ref="C?"  Part="1" 
+AR Path="/5EA7B1AC" Ref="C?"  Part="1" 
+AR Path="/5E9DC684/5EA7B1AC" Ref="C?"  Part="1" 
+F 0 "C?" V 4529 2750 50  0000 C CNN
+F 1 "100nF" V 4438 2750 50  0000 C CNN
+F 2 "" H 4300 2750 50  0001 C CNN
+F 3 "~" H 4300 2750 50  0001 C CNN
+	1    4300 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 2750 3800 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5EA7BBE7
+P 4450 2750
+F 0 "#PWR?" H 4450 2500 50  0001 C CNN
+F 1 "GND" H 4455 2577 50  0000 C CNN
+F 2 "" H 4450 2750 50  0001 C CNN
+F 3 "" H 4450 2750 50  0001 C CNN
+	1    4450 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2750 4450 2750
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EA7FF97
+P 4000 2650
+F 0 "#PWR?" H 4000 2500 50  0001 C CNN
+F 1 "+3V3" H 4015 2823 50  0000 C CNN
+F 2 "" H 4000 2650 50  0001 C CNN
+F 3 "" H 4000 2650 50  0001 C CNN
+	1    4000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2850 4000 2850
+Wire Wire Line
+	4000 2850 4000 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5EA80B48
+P 4000 3000
+F 0 "#PWR?" H 4000 2750 50  0001 C CNN
+F 1 "GND" H 4005 2827 50  0000 C CNN
+F 2 "" H 4000 3000 50  0001 C CNN
+F 3 "" H 4000 3000 50  0001 C CNN
+	1    4000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2950 4000 2950
+Wire Wire Line
+	4000 2950 4000 3000
+Wire Wire Line
+	2400 2250 1750 2250
+Wire Wire Line
+	2400 2350 1750 2350
+Wire Wire Line
+	2400 2450 1750 2450
+Wire Wire Line
+	2400 2550 1750 2550
+Text HLabel 1750 2250 0    50   Input ~ 0
+MPU_MOSI_SDA
+Text HLabel 1750 2350 0    50   Input ~ 0
+MPU_MISO
+Text HLabel 1750 2450 0    50   Input ~ 0
+MPU_SCLK_SCL
+Text HLabel 1750 2550 0    50   Input ~ 0
+MPU_CS
+$Comp
+L power:GND #PWR?
+U 1 1 5EA833A5
+P 2300 2900
+F 0 "#PWR?" H 2300 2650 50  0001 C CNN
+F 1 "GND" H 2305 2727 50  0000 C CNN
+F 2 "" H 2300 2900 50  0001 C CNN
+F 3 "" H 2300 2900 50  0001 C CNN
+	1    2300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2900 2300 2750
+Wire Wire Line
+	2300 2750 2400 2750
+Wire Wire Line
+	3750 5100 4500 5100
+Wire Wire Line
+	3750 5300 4500 5300
+Wire Wire Line
+	3750 5500 4500 5500
+Wire Wire Line
+	3750 5700 4500 5700
+Text HLabel 4500 5100 2    50   Input ~ 0
+BME_MISO
+Text HLabel 4500 5300 2    50   Input ~ 0
+BME_SCLK_SCL
+Text HLabel 4500 5500 2    50   Input ~ 0
+BME_MOSI_SDA
+Text HLabel 4500 5700 2    50   Input ~ 0
+BME_CS
+$EndSCHEMATC
