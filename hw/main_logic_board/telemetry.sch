@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L RF_Module:ESP-12F U?
+L RF_Module:ESP-12F U8
 U 1 1 5EA6AEF3
 P 6400 3200
-F 0 "U?" H 6400 4181 50  0000 C CNN
+F 0 "U8" H 6400 4181 50  0000 C CNN
 F 1 "ESP-12F" H 6400 4090 50  0000 C CNN
 F 2 "RF_Module:ESP-12E" H 6400 3200 50  0001 C CNN
 F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 6050 3300 50  0001 C CNN
