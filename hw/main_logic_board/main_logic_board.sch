@@ -344,4 +344,15 @@ Text Label 5300 4800 0    50   ~ 0
 RC_OUT_4
 Text Label 5300 4900 0    50   ~ 0
 RC_OUT_6
+$Comp
+L Connector:USB_A J4
+U 1 1 5EAEF3D4
+P 9750 1950
+F 0 "J4" H 9520 1847 50  0000 R CNN
+F 1 "USB_A" H 9520 1938 50  0000 R CNN
+F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 9900 1900 50  0001 C CNN
+F 3 " ~" H 9900 1900 50  0001 C CNN
+	1    9750 1950
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
