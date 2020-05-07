@@ -149,7 +149,7 @@ AR Path="/5E9DC864/5EA75726" Ref="F1"  Part="1"
 AR Path="/5EB4BC23/5EA75726" Ref="F?"  Part="1" 
 F 0 "F1" V 1003 1150 50  0000 C CNN
 F 1 "Fuse" V 1094 1150 50  0000 C CNN
-F 2 "" V 1130 1150 50  0001 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 1130 1150 50  0001 C CNN
 F 3 "~" H 1200 1150 50  0001 C CNN
 	1    1200 1150
 	0    1    1    0   
@@ -2335,4 +2335,12 @@ F 3 "" H 10100 1000 50  0001 C CNN
 	1    10100 1000
 	1    0    0    -1  
 $EndComp
+Text Label 2550 2500 0    50   ~ 0
+BATT_VIN_5V
+Text Label 2550 4550 0    50   ~ 0
+BATT_VIN_3V3
+Text Label 6950 2500 0    50   ~ 0
+SW_NODE_5V
+Text Label 6900 4550 0    50   ~ 0
+SW_NODE_3V3
 $EndSCHEMATC
