@@ -264,7 +264,7 @@ P 7800 2000
 F 0 "U11" H 8200 2165 50  0000 C CNN
 F 1 "VL53L1X" H 8200 2074 50  0000 C CNN
 F 2 "Sensor_Distance:ST_VL53L1x" H 7850 2050 50  0001 C CNN
-F 3 "" H 7850 2050 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/vl53l1x.pdf" H 7850 2050 50  0001 C CNN
 	1    7800 2000
 	1    0    0    -1  
 $EndComp

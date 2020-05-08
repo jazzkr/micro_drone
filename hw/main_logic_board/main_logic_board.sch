@@ -13,17 +13,6 @@ Comment2 "Designed By: Krisztian Kurucz"
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_Module:PocketBeagle U1
-U 1 1 5E98C13D
-P 6800 3600
-F 0 "U1" H 5950 1450 50  0000 C CNN
-F 1 "PocketBeagle" H 7450 1450 50  0000 C CNN
-F 2 "lib:BeagleBoard_PocketBeagle_SMD" H 6800 3600 50  0001 C CNN
-F 3 "https://github.com/beagleboard/pocketbeagle/wiki/System-Reference-Manual" H 8500 2300 50  0001 C CNN
-	1    6800 3600
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 1000 650  1950 1350
 U 5E9DC864
@@ -92,7 +81,7 @@ F 3 "" H 6700 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 6150 6700 5800
+	6700 6150 6700 6000
 Wire Wire Line
 	5800 4400 5300 4400
 Wire Wire Line
@@ -186,14 +175,9 @@ F 3 "~" H 8050 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7300 1400 7300 1350
-Wire Wire Line
-	7300 1350 7400 1350
-Wire Wire Line
 	7400 1350 7400 1400
 Wire Wire Line
 	7850 1350 7850 1050
-Connection ~ 7400 1350
 Wire Wire Line
 	7800 4300 8350 4300
 Wire Wire Line
@@ -240,8 +224,6 @@ NoConn ~ 5800 4100
 NoConn ~ 5800 3900
 NoConn ~ 5800 3800
 NoConn ~ 5800 3700
-Wire Wire Line
-	5800 4000 5300 4000
 Text Label 5300 3500 0    50   ~ 0
 AIN_1V8_0
 Text Label 5300 4000 0    50   ~ 0
@@ -257,14 +239,6 @@ NoConn ~ 5800 2600
 NoConn ~ 5800 2500
 NoConn ~ 5800 2300
 NoConn ~ 5800 2200
-Wire Wire Line
-	5800 1800 5350 1800
-Wire Wire Line
-	5800 1900 5350 1900
-Wire Wire Line
-	5800 2000 5350 2000
-Wire Wire Line
-	5800 2100 5350 2100
 Text Label 5350 1800 0    50   ~ 0
 GPIO20
 Text Label 5350 1900 0    50   ~ 0
@@ -288,7 +262,7 @@ P 10250 1250
 F 0 "J4" H 10020 1147 50  0000 R CNN
 F 1 "USB_A" H 10020 1238 50  0000 R CNN
 F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 10400 1200 50  0001 C CNN
-F 3 " ~" H 10400 1200 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/on-shore-technology-inc/USB-A1HSW6/ED2989-ND/2677750" H 10400 1200 50  0001 C CNN
 	1    10250 1250
 	0    1    1    0   
 $EndComp
@@ -319,7 +293,7 @@ P 9000 2000
 F 0 "U9" H 9000 2467 50  0000 C CNN
 F 1 "USBLC6-2P6" H 9000 2376 50  0000 C CNN
 F 2 "lib:SOT50P160X60-6N" H 9000 2000 50  0001 L BNN
-F 3 "IPC 7351B" H 9000 2000 50  0001 L BNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 9000 2000 50  0001 L BNN
 F 4 "5" H 9000 2000 50  0001 L BNN "Field4"
 F 5 "ST MICROELECTRONICS" H 9000 2000 50  0001 L BNN "Field5"
 F 6 "SOT-666" H 9000 2000 50  0001 L BNN "Field6"
@@ -346,24 +320,17 @@ F 3 "" H 9800 1300 50  0001 C CNN
 	1    9800 1300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6400 1400
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5EB32F98
-P 6550 1200
-F 0 "TP4" H 6608 1318 50  0000 L CNN
-F 1 "AIN_VREF+" H 6608 1227 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6750 1200 50  0001 C CNN
-F 3 "~" H 6750 1200 50  0001 C CNN
-	1    6550 1200
+P 6600 1150
+F 0 "TP4" H 6658 1268 50  0000 L CNN
+F 1 "AIN_VREF+" H 6658 1177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6800 1150 50  0001 C CNN
+F 3 "~" H 6800 1150 50  0001 C CNN
+	1    6600 1150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6800 1400 6800 1250
-Wire Wire Line
-	6800 1250 6550 1250
-Wire Wire Line
-	6550 1250 6550 1200
 Text Label 5300 3600 0    50   ~ 0
 AIN_1V8_1
 Wire Wire Line
@@ -832,17 +799,6 @@ Text Label 3550 4450 2    50   ~ 0
 UART4_TX
 Wire Wire Line
 	6900 5800 6900 6000
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5EE356C8
-P 6900 6000
-F 0 "TP5" V 6854 6188 50  0000 L CNN
-F 1 "AIN_VREF-" V 6945 6188 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7100 6000 50  0001 C CNN
-F 3 "~" H 7100 6000 50  0001 C CNN
-	1    6900 6000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2950 3500 3550 3500
 Wire Wire Line
@@ -1083,16 +1039,14 @@ RC_IN
 $Comp
 L Connector:TestPoint TP8
 U 1 1 5ECB5945
-P 5100 2400
-F 0 "TP8" H 5100 2725 50  0000 C CNN
-F 1 "RC_IN" H 5100 2634 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5300 2400 50  0001 C CNN
-F 3 "~" H 5300 2400 50  0001 C CNN
-	1    5100 2400
+P 5150 2650
+F 0 "TP8" H 5150 2975 50  0000 C CNN
+F 1 "RC_IN" H 5150 2884 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5350 2650 50  0001 C CNN
+F 3 "~" H 5350 2650 50  0001 C CNN
+	1    5150 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5100 2400 5800 2400
 $Comp
 L Connector:TestPoint TP9
 U 1 1 5ECC7984
@@ -1209,4 +1163,243 @@ Wire Wire Line
 Wire Wire Line
 	8600 5700 8600 5650
 Connection ~ 8600 5650
+$Comp
+L Device:LED D8
+U 1 1 5EB7C8B8
+P 4400 1550
+F 0 "D8" V 4347 1628 50  0000 L CNN
+F 1 "LED" V 4438 1628 50  0000 L CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 4400 1550 50  0001 C CNN
+F 3 "~" H 4400 1550 50  0001 C CNN
+	1    4400 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 5EB7DF23
+P 4100 1550
+F 0 "D7" V 4047 1628 50  0000 L CNN
+F 1 "LED" V 4138 1628 50  0000 L CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 4100 1550 50  0001 C CNN
+F 3 "~" H 4100 1550 50  0001 C CNN
+	1    4100 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5EB86CFD
+P 3800 1550
+F 0 "D6" V 3747 1628 50  0000 L CNN
+F 1 "LED" V 3838 1628 50  0000 L CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 3800 1550 50  0001 C CNN
+F 3 "~" H 3800 1550 50  0001 C CNN
+	1    3800 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3800 1700 3800 1850
+Wire Wire Line
+	3800 1850 4100 1850
+Wire Wire Line
+	4100 1850 4100 1700
+Wire Wire Line
+	4100 1850 4400 1850
+Wire Wire Line
+	4400 1850 4400 1700
+Connection ~ 4100 1850
+Wire Wire Line
+	4100 1850 4100 2000
+$Comp
+L power:GND #PWR0136
+U 1 1 5EBB7E7A
+P 4100 2000
+F 0 "#PWR0136" H 4100 1750 50  0001 C CNN
+F 1 "GND" H 4105 1827 50  0000 C CNN
+F 2 "" H 4100 2000 50  0001 C CNN
+F 3 "" H 4100 2000 50  0001 C CNN
+	1    4100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1800 5800 1800
+Wire Wire Line
+	5100 1900 5800 1900
+Wire Wire Line
+	5000 2000 5800 2000
+Wire Wire Line
+	5800 2400 5350 2400
+Wire Wire Line
+	5350 2400 5350 2700
+Wire Wire Line
+	5350 2700 5150 2700
+Wire Wire Line
+	5150 2700 5150 2650
+Wire Wire Line
+	4750 2100 4750 2000
+Wire Wire Line
+	4750 2100 5800 2100
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5EC7F372
+P 4750 2000
+F 0 "TP5" H 4750 2325 50  0000 C CNN
+F 1 "GPIO27" H 4750 2234 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4950 2000 50  0001 C CNN
+F 3 "~" H 4950 2000 50  0001 C CNN
+	1    4750 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 6000 6700 6000
+Connection ~ 6700 6000
+Wire Wire Line
+	6700 6000 6700 5800
+NoConn ~ 7800 1800
+$Comp
+L MCU_Module:PocketBeagle U1
+U 1 1 5E98C13D
+P 6800 3600
+F 0 "U1" H 5950 1450 50  0000 C CNN
+F 1 "PocketBeagle" H 7450 1450 50  0000 C CNN
+F 2 "lib:BeagleBoard_PocketBeagle_SMD" H 6800 3600 50  0001 C CNN
+F 3 "https://github.com/beagleboard/pocketbeagle/wiki/System-Reference-Manual" H 8500 2300 50  0001 C CNN
+	1    6800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5ECACF51
+P 6350 1300
+F 0 "TP10" H 6408 1418 50  0000 L CNN
+F 1 "USB_VIN" H 6408 1327 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6550 1300 50  0001 C CNN
+F 3 "~" H 6550 1300 50  0001 C CNN
+	1    6350 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1400 6800 1200
+Wire Wire Line
+	6800 1200 6600 1200
+Wire Wire Line
+	6600 1200 6600 1150
+Wire Wire Line
+	6400 1400 6400 1350
+Wire Wire Line
+	6400 1350 6350 1350
+Wire Wire Line
+	6350 1350 6350 1300
+$Comp
+L Device:R_Small_US R15
+U 1 1 5ED35F65
+P 3800 1200
+F 0 "R15" H 3868 1246 50  0000 L CNN
+F 1 "1K" H 3868 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3800 1200 50  0001 C CNN
+F 3 "~" H 3800 1200 50  0001 C CNN
+	1    3800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R16
+U 1 1 5ED4C205
+P 4100 1200
+F 0 "R16" H 4168 1246 50  0000 L CNN
+F 1 "1K" H 4168 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4100 1200 50  0001 C CNN
+F 3 "~" H 4100 1200 50  0001 C CNN
+	1    4100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R17
+U 1 1 5ED6C03B
+P 4400 1200
+F 0 "R17" H 4468 1246 50  0000 L CNN
+F 1 "1K" H 4468 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4400 1200 50  0001 C CNN
+F 3 "~" H 4400 1200 50  0001 C CNN
+	1    4400 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1400 3800 1300
+Wire Wire Line
+	4100 1400 4100 1300
+Wire Wire Line
+	4400 1400 4400 1300
+Wire Wire Line
+	4400 1100 4400 1050
+Wire Wire Line
+	4400 1050 5000 1050
+Wire Wire Line
+	5000 1050 5000 2000
+Wire Wire Line
+	5100 950  4100 950 
+Wire Wire Line
+	4100 950  4100 1100
+Wire Wire Line
+	5100 950  5100 1900
+Wire Wire Line
+	5200 850  3800 850 
+Wire Wire Line
+	3800 850  3800 1100
+Wire Wire Line
+	5200 850  5200 1800
+$Comp
+L power:+BATT #PWR0156
+U 1 1 5EE55BF0
+P 4200 3650
+F 0 "#PWR0156" H 4200 3500 50  0001 C CNN
+F 1 "+BATT" H 4215 3823 50  0000 C CNN
+F 2 "" H 4200 3650 50  0001 C CNN
+F 3 "" H 4200 3650 50  0001 C CNN
+	1    4200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R20
+U 1 1 5EE56C28
+P 4200 3850
+F 0 "R20" H 4268 3896 50  0000 L CNN
+F 1 "20K" H 4268 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4200 3850 50  0001 C CNN
+F 3 "~" H 4200 3850 50  0001 C CNN
+	1    4200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R21
+U 1 1 5EE62704
+P 4200 4150
+F 0 "R21" H 4268 4196 50  0000 L CNN
+F 1 "7K5" H 4268 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4200 4150 50  0001 C CNN
+F 3 "~" H 4200 4150 50  0001 C CNN
+	1    4200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 5EE6E521
+P 4200 4350
+F 0 "#PWR0157" H 4200 4100 50  0001 C CNN
+F 1 "GND" H 4205 4177 50  0000 C CNN
+F 2 "" H 4200 4350 50  0001 C CNN
+F 3 "" H 4200 4350 50  0001 C CNN
+	1    4200 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4350 4200 4250
+Wire Wire Line
+	4200 4050 4200 4000
+Wire Wire Line
+	4200 3750 4200 3650
+Wire Wire Line
+	4200 4000 5800 4000
+Connection ~ 4200 4000
+Wire Wire Line
+	4200 4000 4200 3950
+NoConn ~ 7300 1400
 $EndSCHEMATC
