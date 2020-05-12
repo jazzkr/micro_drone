@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name USBLC6-2P6)(type Legacy)(uri ${KIPRJMOD}/lib/USBLC6-2P6.lib)(options "")(descr ""))
+  (lib (name VL53L1Xlib)(type Legacy)(uri ${KIPRJMOD}/lib/VL53L1Xlib.lib)(options "")(descr ""))
+)

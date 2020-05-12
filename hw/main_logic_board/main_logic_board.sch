@@ -18,6 +18,8 @@ S 1000 650  1950 1350
 U 5E9DC864
 F0 "power" 50
 F1 "power.sch" 50
+F2 "BATTC_3V3" I R 2950 750 50 
+F3 "BATTV_1V8" I R 2950 850 50 
 $EndSheet
 $Comp
 L power:+5V #PWR0101
@@ -1048,17 +1050,6 @@ F 3 "~" H 5350 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP9
-U 1 1 5ECC7984
-P 5100 3500
-F 0 "TP9" H 5100 3825 50  0000 C CNN
-F 1 "AIN_0" H 5100 3734 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5300 3500 50  0001 C CNN
-F 3 "~" H 5300 3500 50  0001 C CNN
-	1    5100 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:TestPoint TP6
 U 1 1 5ECD0003
 P 4850 3600
@@ -1069,8 +1060,6 @@ F 3 "~" H 5050 3600 50  0001 C CNN
 	1    4850 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5100 3500 5800 3500
 Wire Wire Line
 	4850 3600 5800 3600
 $Comp
@@ -1346,60 +1335,17 @@ Wire Wire Line
 	3800 850  3800 1100
 Wire Wire Line
 	5200 850  5200 1800
-$Comp
-L power:+BATT #PWR0156
-U 1 1 5EE55BF0
-P 4200 3650
-F 0 "#PWR0156" H 4200 3500 50  0001 C CNN
-F 1 "+BATT" H 4215 3823 50  0000 C CNN
-F 2 "" H 4200 3650 50  0001 C CNN
-F 3 "" H 4200 3650 50  0001 C CNN
-	1    4200 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R20
-U 1 1 5EE56C28
-P 4200 3850
-F 0 "R20" H 4268 3896 50  0000 L CNN
-F 1 "20K" H 4268 3805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4200 3850 50  0001 C CNN
-F 3 "~" H 4200 3850 50  0001 C CNN
-	1    4200 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R21
-U 1 1 5EE62704
-P 4200 4150
-F 0 "R21" H 4268 4196 50  0000 L CNN
-F 1 "7K5" H 4268 4105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4200 4150 50  0001 C CNN
-F 3 "~" H 4200 4150 50  0001 C CNN
-	1    4200 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0157
-U 1 1 5EE6E521
-P 4200 4350
-F 0 "#PWR0157" H 4200 4100 50  0001 C CNN
-F 1 "GND" H 4205 4177 50  0000 C CNN
-F 2 "" H 4200 4350 50  0001 C CNN
-F 3 "" H 4200 4350 50  0001 C CNN
-	1    4200 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 4350 4200 4250
-Wire Wire Line
-	4200 4050 4200 4000
-Wire Wire Line
-	4200 3750 4200 3650
-Wire Wire Line
-	4200 4000 5800 4000
-Connection ~ 4200 4000
-Wire Wire Line
-	4200 4000 4200 3950
 NoConn ~ 7300 1400
+Wire Wire Line
+	5300 4000 5800 4000
+Wire Wire Line
+	2950 750  3500 750 
+Wire Wire Line
+	2950 850  3500 850 
+Wire Wire Line
+	5800 3500 5300 3500
+Text Label 3500 850  2    50   ~ 0
+AIN_1V8_0
+Text Label 3500 750  2    50   ~ 0
+AIN_3V3
 $EndSCHEMATC
