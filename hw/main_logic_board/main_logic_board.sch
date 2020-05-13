@@ -32,10 +32,6 @@ F 3 "" H 6200 1000 50  0001 C CNN
 	1    6200 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 3700 8350 3700
-Wire Wire Line
-	7800 3800 8350 3800
 Text Label 8350 3700 2    50   ~ 0
 I2C2_SCL
 Text Label 8350 3800 2    50   ~ 0
@@ -325,10 +321,6 @@ F 3 "~" H 6800 1150 50  0001 C CNN
 $EndComp
 Text Label 5300 3600 0    50   ~ 0
 AIN_1V8_1
-Wire Wire Line
-	7800 3400 8350 3400
-Wire Wire Line
-	7800 3500 8350 3500
 Text Label 8350 3400 2    50   ~ 0
 I2C1_SCL
 Text Label 8350 3500 2    50   ~ 0
@@ -714,8 +706,6 @@ RC_OUT_3
 Text Label 6800 7250 2    50   ~ 0
 RC_OUT_4
 Wire Wire Line
-	9250 4350 8800 4350
-Wire Wire Line
 	9250 4750 8800 4750
 Wire Wire Line
 	9250 5150 8800 5150
@@ -736,9 +726,6 @@ Wire Wire Line
 Connection ~ 8700 4650
 Wire Wire Line
 	8700 4650 8700 5050
-Wire Wire Line
-	8700 4250 8700 4000
-Connection ~ 8700 4250
 Wire Wire Line
 	8600 4450 8600 4850
 Wire Wire Line
@@ -765,12 +752,12 @@ Connection ~ 8600 5250
 $Comp
 L power:+BATT #PWR0138
 U 1 1 5EDA33F7
-P 8700 4000
-F 0 "#PWR0138" H 8700 3850 50  0001 C CNN
-F 1 "+BATT" H 8715 4173 50  0000 C CNN
-F 2 "" H 8700 4000 50  0001 C CNN
-F 3 "" H 8700 4000 50  0001 C CNN
-	1    8700 4000
+P 8700 4150
+F 0 "#PWR0138" H 8700 4000 50  0001 C CNN
+F 1 "+BATT" H 8715 4323 50  0000 C CNN
+F 2 "" H 8700 4150 50  0001 C CNN
+F 3 "" H 8700 4150 50  0001 C CNN
+	1    8700 4150
 	1    0    0    -1  
 $EndComp
 Text Label 8800 4350 0    50   ~ 0
@@ -1346,4 +1333,99 @@ Wire Wire Line
 	7000 1250 7000 1400
 Connection ~ 7100 1100
 NoConn ~ 7100 1400
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EC094BF
+P 8550 3700
+AR Path="/5E9DC864/5EC094BF" Ref="R?"  Part="1" 
+AR Path="/5EC094BF" Ref="R?"  Part="1" 
+F 0 "R?" V 8600 3800 50  0000 C CNN
+F 1 "10K" V 8600 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8550 3700 50  0001 C CNN
+F 3 "~" H 8550 3700 50  0001 C CNN
+	1    8550 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 4350 9250 4350
+Wire Wire Line
+	8700 4250 8700 4150
+Connection ~ 8700 4250
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EC5C35B
+P 8550 3800
+AR Path="/5E9DC864/5EC5C35B" Ref="R?"  Part="1" 
+AR Path="/5EC5C35B" Ref="R?"  Part="1" 
+F 0 "R?" V 8600 3700 50  0000 C CNN
+F 1 "10K" V 8600 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8550 3800 50  0001 C CNN
+F 3 "~" H 8550 3800 50  0001 C CNN
+	1    8550 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 3700 8450 3700
+Wire Wire Line
+	7800 3800 8450 3800
+$Comp
+L Device:R_Small_US R?
+U 1 1 5ECCA759
+P 8550 3400
+AR Path="/5E9DC864/5ECCA759" Ref="R?"  Part="1" 
+AR Path="/5ECCA759" Ref="R?"  Part="1" 
+F 0 "R?" V 8600 3450 50  0000 L CNN
+F 1 "10K" V 8600 3175 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8550 3400 50  0001 C CNN
+F 3 "~" H 8550 3400 50  0001 C CNN
+	1    8550 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5ECD61A0
+P 8550 3500
+AR Path="/5E9DC864/5ECD61A0" Ref="R?"  Part="1" 
+AR Path="/5ECD61A0" Ref="R?"  Part="1" 
+F 0 "R?" V 8500 3550 50  0000 L CNN
+F 1 "10K" V 8500 3275 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8550 3500 50  0001 C CNN
+F 3 "~" H 8550 3500 50  0001 C CNN
+	1    8550 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7800 3400 8450 3400
+Wire Wire Line
+	7800 3500 8450 3500
+Wire Wire Line
+	8650 3800 8850 3800
+Wire Wire Line
+	8850 3800 8850 3700
+Wire Wire Line
+	8650 3700 8850 3700
+Connection ~ 8850 3700
+Wire Wire Line
+	8850 3700 8850 3500
+Wire Wire Line
+	8650 3500 8850 3500
+Connection ~ 8850 3500
+Wire Wire Line
+	8850 3500 8850 3400
+Wire Wire Line
+	8650 3400 8850 3400
+Connection ~ 8850 3400
+Wire Wire Line
+	8850 3400 8850 3250
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5ED2CB78
+P 8850 3250
+F 0 "#PWR?" H 8850 3100 50  0001 C CNN
+F 1 "+3V3" H 8865 3423 50  0000 C CNN
+F 2 "" H 8850 3250 50  0001 C CNN
+F 3 "" H 8850 3250 50  0001 C CNN
+	1    8850 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
