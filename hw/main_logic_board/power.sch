@@ -148,7 +148,8 @@ AR Path="/5EB4BC23/5EA75726" Ref="F?"  Part="1"
 F 0 "F1" V 1003 1150 50  0000 C CNN
 F 1 "Fuse" V 1094 1150 50  0000 C CNN
 F 2 "Fuse:Fuse_1206_3216Metric" V 1130 1150 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/bel-fuse-inc/0685P9400-01/507-2460-1-ND/10057403" H 1200 1150 50  0001 C CNN
+F 3 "~" H 1200 1150 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/bel-fuse-inc/0685P9400-01/507-2460-1-ND/10057403" H 1200 1150 50  0001 C CNN "Digikey"
 	1    1200 1150
 	0    1    1    0   
 $EndComp
@@ -228,7 +229,8 @@ AR Path="/5EB4BC23/5EA8994C" Ref="L?"  Part="1"
 F 0 "L1" V 7735 2500 50  0000 C CNN
 F 1 "3.3u 20mOhm" V 7650 2300 50  0000 C CNN
 F 2 "Inductor_SMD:L_Abracon_ASPI-0630LR" H 7550 2500 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/abracon-llc/ASPI-0630LR-3R3M-T15/ASPI-0630LR-3R3M-T15CT-ND/3060139" H 7550 2500 50  0001 C CNN
+F 3 "~" H 7550 2500 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/abracon-llc/ASPI-0630LR-3R3M-T15/ASPI-0630LR-3R3M-T15CT-ND/3060139" H 7550 2500 50  0001 C CNN "Digikey"
 	1    7550 2500
 	0    -1   -1   0   
 $EndComp
@@ -447,7 +449,8 @@ AR Path="/5EB4BC23/5EAAF5AA" Ref="L?"  Part="1"
 F 0 "L2" V 7735 4550 50  0000 C CNN
 F 1 "2.2u 15mOhm" V 7650 4350 50  0000 C CNN
 F 2 "Inductor_SMD:L_Vishay_IHLP-2020" H 7550 4550 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/vishay-dale/IHLP2020CZER2R2M11/541-1236-1-ND/2025126" H 7550 4550 50  0001 C CNN
+F 3 "~" H 7550 4550 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/vishay-dale/IHLP2020CZER2R2M11/541-1236-1-ND/2025126" H 7550 4550 50  0001 C CNN "Digikey"
 	1    7550 4550
 	0    -1   -1   0   
 $EndComp

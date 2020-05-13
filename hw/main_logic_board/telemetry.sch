@@ -28,7 +28,8 @@ P 1550 2500
 F 0 "SW1" V 1596 2452 50  0000 R CNN
 F 1 "ESP_RESET" V 1505 2452 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 1550 2700 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/omron-electronics-inc-emc-div/B3U-1000P/SW1020CT-ND/1534357" H 1550 2700 50  0001 C CNN
+F 3 "~" H 1550 2700 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/omron-electronics-inc-emc-div/B3U-1000P/SW1020CT-ND/1534357" H 1550 2500 50  0001 C CNN "Digikey"
 	1    1550 2500
 	0    -1   -1   0   
 $EndComp
@@ -124,7 +125,8 @@ P 2100 3000
 F 0 "SW2" V 2146 2952 50  0000 R CNN
 F 1 "ESP_GPIO0" V 2055 2952 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 2100 3200 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/omron-electronics-inc-emc-div/B3U-1000P/SW1020CT-ND/1534357" H 2100 3200 50  0001 C CNN
+F 3 "~" H 2100 3200 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/omron-electronics-inc-emc-div/B3U-1000P/SW1020CT-ND/1534357" H 2100 3000 50  0001 C CNN "Digikey"
 	1    2100 3000
 	0    -1   -1   0   
 $EndComp

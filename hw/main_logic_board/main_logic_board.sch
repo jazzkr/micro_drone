@@ -250,7 +250,8 @@ P 10250 1250
 F 0 "J4" H 10020 1147 50  0000 R CNN
 F 1 "USB_A" H 10020 1238 50  0000 R CNN
 F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 10400 1200 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/on-shore-technology-inc/USB-A1HSW6/ED2989-ND/2677750" H 10400 1200 50  0001 C CNN
+F 3 "~" H 10400 1200 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/on-shore-technology-inc/USB-A1HSW6/ED2989-ND/2677750" H 10250 1250 50  0001 C CNN "Digikey"
 	1    10250 1250
 	0    1    1    0   
 $EndComp

@@ -23,6 +23,7 @@ F 0 "D1" H 4194 1996 50  0000 L CNN
 F 1 "WS2813" H 4194 1905 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 3900 1650 50  0001 L TNN
 F 3 "http://www.normandled.com/upload/201605/WS2813%20LED%20Datasheet.pdf" H 3950 1575 50  0001 L TNN
+F 4 "N/A" H 3850 1950 50  0001 C CNN "Digikey"
 	1    3850 1950
 	1    0    0    -1  
 $EndComp
@@ -36,6 +37,7 @@ F 0 "D3" H 6444 1996 50  0000 L CNN
 F 1 "WS2813" H 6444 1905 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 6150 1650 50  0001 L TNN
 F 3 "http://www.normandled.com/upload/201605/WS2813%20LED%20Datasheet.pdf" H 6200 1575 50  0001 L TNN
+F 4 "N/A" H 6100 1950 50  0001 C CNN "Digikey"
 	1    6100 1950
 	1    0    0    -1  
 $EndComp
@@ -49,6 +51,7 @@ F 0 "D2" H 5344 1996 50  0000 L CNN
 F 1 "WS2813" H 5344 1905 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 5050 1650 50  0001 L TNN
 F 3 "http://www.normandled.com/upload/201605/WS2813%20LED%20Datasheet.pdf" H 5100 1575 50  0001 L TNN
+F 4 "N/A" H 5000 1950 50  0001 C CNN "Digikey"
 	1    5000 1950
 	1    0    0    -1  
 $EndComp
@@ -62,6 +65,7 @@ F 0 "D4" H 7494 1996 50  0000 L CNN
 F 1 "WS2813" H 7494 1905 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 7200 1650 50  0001 L TNN
 F 3 "http://www.normandled.com/upload/201605/WS2813%20LED%20Datasheet.pdf" H 7250 1575 50  0001 L TNN
+F 4 "N/A" H 7150 1950 50  0001 C CNN "Digikey"
 	1    7150 1950
 	1    0    0    -1  
 $EndComp
@@ -72,7 +76,8 @@ P 2750 3450
 F 0 "BZ1" H 2902 3479 50  0000 L CNN
 F 1 "Buzzer" H 2902 3388 50  0000 L CNN
 F 2 "Buzzer_Beeper:Buzzer_Murata_PKMCS0909E4000-R1" V 2725 3550 50  0001 C CNN
-F 3 "~" V 2725 3550 50  0001 C CNN
+F 3 "http://www.puiaudio.com/pdf/SMT-0927-S-7-R.pdf" V 2725 3550 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/pui-audio-inc/SMT-0927-S-7-R/668-1664-1-ND/9083419" H 2750 3450 50  0001 C CNN "Digikey"
 	1    2750 3450
 	1    0    0    -1  
 $EndComp
