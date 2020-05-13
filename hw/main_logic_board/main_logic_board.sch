@@ -33,13 +33,6 @@ F 3 "" H 6200 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 1400 7000 1350
-Wire Wire Line
-	7000 1350 7100 1350
-Connection ~ 7100 1350
-Wire Wire Line
-	7100 1350 7100 1400
-Wire Wire Line
 	7800 3700 8350 3700
 Wire Wire Line
 	7800 3800 8350 3800
@@ -162,9 +155,6 @@ Wire Wire Line
 	7350 1050 7350 1100
 Wire Wire Line
 	7350 1100 7100 1100
-Connection ~ 7100 1100
-Wire Wire Line
-	7100 1100 7100 1350
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5EA3A39A
@@ -1348,4 +1338,12 @@ Text Label 3500 850  2    50   ~ 0
 AIN_1V8_0
 Text Label 3500 750  2    50   ~ 0
 AIN_3V3
+Wire Wire Line
+	7000 1250 7100 1250
+Wire Wire Line
+	7100 1250 7100 1100
+Wire Wire Line
+	7000 1250 7000 1400
+Connection ~ 7100 1100
+NoConn ~ 7100 1400
 $EndSCHEMATC
