@@ -148,7 +148,7 @@ AR Path="/5EB4BC23/5EA75726" Ref="F?"  Part="1"
 F 0 "F1" V 1003 1150 50  0000 C CNN
 F 1 "Fuse" V 1094 1150 50  0000 C CNN
 F 2 "Fuse:Fuse_1206_3216Metric" V 1130 1150 50  0001 C CNN
-F 3 "~" H 1200 1150 50  0001 C CNN
+F 3 "https://www.mouser.ca/pdfDocs/BelFuseDatasheet.pdf" H 1200 1150 50  0001 C CNN
 F 4 "https://www.digikey.ca/product-detail/en/bel-fuse-inc/0685P9400-01/507-2460-1-ND/10057403" H 1200 1150 50  0001 C CNN "Digikey"
 	1    1200 1150
 	0    1    1    0   
@@ -182,6 +182,7 @@ F 0 "U6" H 6500 2967 50  0000 C CNN
 F 1 "TPS563200" H 6500 2876 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6550 2350 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps563200.pdf" H 6500 2600 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/texas-instruments/TPS563200DDCR/296-43663-1-ND/5864733" H 6500 2600 50  0001 C CNN "Digikey"
 	1    6500 2600
 	1    0    0    -1  
 $EndComp
@@ -229,7 +230,7 @@ AR Path="/5EB4BC23/5EA8994C" Ref="L?"  Part="1"
 F 0 "L1" V 7735 2500 50  0000 C CNN
 F 1 "3.3u 20mOhm" V 7650 2300 50  0000 C CNN
 F 2 "Inductor_SMD:L_Abracon_ASPI-0630LR" H 7550 2500 50  0001 C CNN
-F 3 "~" H 7550 2500 50  0001 C CNN
+F 3 "https://abracon.com/Magnetics/power/ASPI-0630LR.pdf" H 7550 2500 50  0001 C CNN
 F 4 "https://www.digikey.ca/product-detail/en/abracon-llc/ASPI-0630LR-3R3M-T15/ASPI-0630LR-3R3M-T15CT-ND/3060139" H 7550 2500 50  0001 C CNN "Digikey"
 	1    7550 2500
 	0    -1   -1   0   
@@ -263,7 +264,8 @@ AR Path="/5EB4BC23/5EA8D2F6" Ref="R?"  Part="1"
 F 0 "R1" H 7918 2746 50  0000 L CNN
 F 1 "56.2K 1%" H 7918 2655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 7850 2700 50  0001 C CNN
-F 3 "~" H 7850 2700 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 7850 2700 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805FT56K2/RMCF0805FT56K2CT-ND/1942478" H 7850 2700 50  0001 C CNN "Digikey"
 	1    7850 2700
 	1    0    0    -1  
 $EndComp
@@ -276,7 +278,8 @@ AR Path="/5EB4BC23/5EA8E302" Ref="R?"  Part="1"
 F 0 "R2" H 7918 3296 50  0000 L CNN
 F 1 "10K 1%" H 7918 3205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 7850 3250 50  0001 C CNN
-F 3 "~" H 7850 3250 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 7850 3250 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805FT10K0/RMCF0805FT10K0CT-ND/1942435" H 7850 3250 50  0001 C CNN "Digikey"
 	1    7850 3250
 	1    0    0    -1  
 $EndComp
@@ -402,6 +405,7 @@ F 0 "U7" H 6500 5017 50  0000 C CNN
 F 1 "TPS563200" H 6500 4926 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6550 4400 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps563200.pdf" H 6500 4650 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/texas-instruments/TPS563200DDCR/296-43663-1-ND/5864733" H 6500 4650 50  0001 C CNN "Digikey"
 	1    6500 4650
 	1    0    0    -1  
 $EndComp
@@ -449,7 +453,7 @@ AR Path="/5EB4BC23/5EAAF5AA" Ref="L?"  Part="1"
 F 0 "L2" V 7735 4550 50  0000 C CNN
 F 1 "2.2u 15mOhm" V 7650 4350 50  0000 C CNN
 F 2 "Inductor_SMD:L_Vishay_IHLP-2020" H 7550 4550 50  0001 C CNN
-F 3 "~" H 7550 4550 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/34260/ihlp2020cz11.pdf" H 7550 4550 50  0001 C CNN
 F 4 "https://www.digikey.ca/product-detail/en/vishay-dale/IHLP2020CZER2R2M11/541-1236-1-ND/2025126" H 7550 4550 50  0001 C CNN "Digikey"
 	1    7550 4550
 	0    -1   -1   0   
@@ -483,7 +487,8 @@ AR Path="/5EB4BC23/5EAAF5BA" Ref="R?"  Part="1"
 F 0 "R3" H 7918 4796 50  0000 L CNN
 F 1 "33.2K 1%" H 7918 4705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 7850 4750 50  0001 C CNN
-F 3 "~" H 7850 4750 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 7850 4750 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805FT33K2/RMCF0805FT33K2CT-ND/1942465" H 7850 4750 50  0001 C CNN "Digikey"
 	1    7850 4750
 	1    0    0    -1  
 $EndComp
@@ -740,6 +745,7 @@ F 0 "U4" H 3800 1742 50  0000 C CNN
 F 1 "NCP1117-5.0_SOT223" H 3800 1651 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3800 1700 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 3900 1250 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/on-semiconductor/NCP1117LPST50T3G/NCP1117LPST50T3GOSCT-ND/5801728" H 3800 1500 50  0001 C CNN "Digikey"
 	1    3800 1500
 	1    0    0    -1  
 $EndComp
@@ -753,6 +759,7 @@ F 0 "U5" H 3800 3942 50  0000 C CNN
 F 1 "NCP1117-3.3_SOT223" H 3800 3851 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3800 3900 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 3900 3450 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/on-semiconductor/NCP1117LPST33T3G/NCP1117LPST33T3GOSCT-ND/3462387" H 3800 3700 50  0001 C CNN "Digikey"
 	1    3800 3700
 	1    0    0    -1  
 $EndComp
@@ -778,7 +785,8 @@ P 10150 2900
 F 0 "J17" H 10230 2892 50  0000 L CNN
 F 1 "5V" H 10230 2801 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical" H 10150 2900 50  0001 C CNN
-F 3 "~" H 10150 2900 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/M50-353.pdf" H 10150 2900 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/harwin-inc/M50-3530442/952-3600-ND/7044015" H 10150 2900 50  0001 C CNN "Digikey"
 	1    10150 2900
 	1    0    0    -1  
 $EndComp
@@ -789,7 +797,8 @@ P 10150 5000
 F 0 "J18" H 10230 4992 50  0000 L CNN
 F 1 "3V3" H 10230 4901 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical" H 10150 5000 50  0001 C CNN
-F 3 "~" H 10150 5000 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/M50-353.pdf" H 10150 5000 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/harwin-inc/M50-3530442/952-3600-ND/7044015" H 10150 5000 50  0001 C CNN "Digikey"
 	1    10150 5000
 	1    0    0    -1  
 $EndComp
@@ -841,7 +850,8 @@ P 10450 1350
 F 0 "J19" H 10530 1342 50  0000 L CNN
 F 1 "BATT_V" H 10530 1251 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical" H 10450 1350 50  0001 C CNN
-F 3 "~" H 10450 1350 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/M50-353.pdf" H 10450 1350 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/harwin-inc/M50-3530442/952-3600-ND/7044015" H 10450 1350 50  0001 C CNN "Digikey"
 	1    10450 1350
 	1    0    0    -1  
 $EndComp
@@ -985,6 +995,7 @@ F 0 "U12" H 8150 1800 50  0000 C CNN
 F 1 "ACS725xLCTR-40AB" H 8800 1100 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8500 1100 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS725-Datasheet.ashx?la=en" H 8400 1450 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/allegro-microsystems/ACS725LLCTR-40AB-T/620-1726-1-ND/5175303" H 8400 1450 50  0001 C CNN "Digikey"
 	1    8400 1450
 	1    0    0    -1  
 $EndComp
@@ -1115,7 +1126,8 @@ AR Path="/5EB4BC23/5EAAF5C0" Ref="R?"  Part="1"
 F 0 "R4" H 7918 5346 50  0000 L CNN
 F 1 "10K 1%" H 7918 5255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 7850 5300 50  0001 C CNN
-F 3 "~" H 7850 5300 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 7850 5300 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/stackpole-electronics-inc/RMCF0805FT10K0/RMCF0805FT10K0CT-ND/1942435" H 7850 5300 50  0001 C CNN "Digikey"
 	1    7850 5300
 	1    0    0    -1  
 $EndComp
@@ -1165,7 +1177,8 @@ AR Path="/5E9DC864/5ED07EE1" Ref="R20"  Part="1"
 F 0 "R20" H 5968 1296 50  0000 L CNN
 F 1 "5K1 0.1%" H 5968 1205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 5900 1250 50  0001 C CNN
-F 3 "~" H 5900 1250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf" H 5900 1250 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/yageo/RT0805BRD075K1L/YAG1938CT-ND/5139386" H 5900 1250 50  0001 C CNN "Digikey"
 	1    5900 1250
 	1    0    0    -1  
 $EndComp
@@ -1178,7 +1191,8 @@ AR Path="/5E9DC864/5ED07EDB" Ref="R21"  Part="1"
 F 0 "R21" H 5968 1596 50  0000 L CNN
 F 1 "820R 0.1%" H 5968 1505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 5900 1550 50  0001 C CNN
-F 3 "~" H 5900 1550 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Resistors%20Thermistors%20PDFs/ERA-14EBxxxU.pdf" H 5900 1550 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/panasonic-electronic-components/ERA-6YEB821V/P820ZCT-ND/250001" H 5900 1550 50  0001 C CNN "Digikey"
 	1    5900 1550
 	1    0    0    -1  
 $EndComp

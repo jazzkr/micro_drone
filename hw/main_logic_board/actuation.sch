@@ -23,7 +23,7 @@ F 0 "D1" H 4194 1996 50  0000 L CNN
 F 1 "WS2813" H 4194 1905 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 3900 1650 50  0001 L TNN
 F 3 "http://www.normandled.com/upload/201605/WS2813%20LED%20Datasheet.pdf" H 3950 1575 50  0001 L TNN
-F 4 "N/A" H 3850 1950 50  0001 C CNN "Digikey"
+F 4 "" H 3850 1950 50  0001 C CNN "Digikey"
 	1    3850 1950
 	1    0    0    -1  
 $EndComp
@@ -37,7 +37,7 @@ F 0 "D3" H 6444 1996 50  0000 L CNN
 F 1 "WS2813" H 6444 1905 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 6150 1650 50  0001 L TNN
 F 3 "http://www.normandled.com/upload/201605/WS2813%20LED%20Datasheet.pdf" H 6200 1575 50  0001 L TNN
-F 4 "N/A" H 6100 1950 50  0001 C CNN "Digikey"
+F 4 "" H 6100 1950 50  0001 C CNN "Digikey"
 	1    6100 1950
 	1    0    0    -1  
 $EndComp
@@ -51,7 +51,7 @@ F 0 "D2" H 5344 1996 50  0000 L CNN
 F 1 "WS2813" H 5344 1905 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 5050 1650 50  0001 L TNN
 F 3 "http://www.normandled.com/upload/201605/WS2813%20LED%20Datasheet.pdf" H 5100 1575 50  0001 L TNN
-F 4 "N/A" H 5000 1950 50  0001 C CNN "Digikey"
+F 4 "" H 5000 1950 50  0001 C CNN "Digikey"
 	1    5000 1950
 	1    0    0    -1  
 $EndComp
@@ -65,7 +65,7 @@ F 0 "D4" H 7494 1996 50  0000 L CNN
 F 1 "WS2813" H 7494 1905 50  0000 L CNN
 F 2 "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 7200 1650 50  0001 L TNN
 F 3 "http://www.normandled.com/upload/201605/WS2813%20LED%20Datasheet.pdf" H 7250 1575 50  0001 L TNN
-F 4 "N/A" H 7150 1950 50  0001 C CNN "Digikey"
+F 4 "" H 7150 1950 50  0001 C CNN "Digikey"
 	1    7150 1950
 	1    0    0    -1  
 $EndComp
@@ -168,6 +168,7 @@ F 0 "U2" H 1800 1600 50  0000 C CNN
 F 1 "74LVC2T45DC" H 2350 1600 50  0000 C CNN
 F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 2050 1200 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH2T45.pdf" H 2300 1800 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/74LVC2T45DC-125/1727-4578-1-ND/2530957" H 2050 2050 50  0001 C CNN "Digikey"
 	1    2050 2050
 	1    0    0    -1  
 $EndComp

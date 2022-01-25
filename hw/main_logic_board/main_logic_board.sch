@@ -250,7 +250,7 @@ P 10250 1250
 F 0 "J4" H 10020 1147 50  0000 R CNN
 F 1 "USB_A" H 10020 1238 50  0000 R CNN
 F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 10400 1200 50  0001 C CNN
-F 3 "~" H 10400 1200 50  0001 C CNN
+F 3 "http://www.on-shore.com/wp-content/uploads/USB-A1HSXX.pdf" H 10400 1200 50  0001 C CNN
 F 4 "https://www.digikey.ca/product-detail/en/on-shore-technology-inc/USB-A1HSW6/ED2989-ND/2677750" H 10250 1250 50  0001 C CNN "Digikey"
 	1    10250 1250
 	0    1    1    0   
@@ -283,9 +283,10 @@ F 0 "U9" H 9000 2467 50  0000 C CNN
 F 1 "USBLC6-2P6" H 9000 2376 50  0000 C CNN
 F 2 "lib:SOT50P160X60-6N" H 9000 2000 50  0001 L BNN
 F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 9000 2000 50  0001 L BNN
-F 4 "5" H 9000 2000 50  0001 L BNN "Field4"
-F 5 "ST MICROELECTRONICS" H 9000 2000 50  0001 L BNN "Field5"
-F 6 "SOT-666" H 9000 2000 50  0001 L BNN "Field6"
+F 4 "" H 9000 2000 50  0001 L BNN "Field4"
+F 5 "" H 9000 2000 50  0001 L BNN "Field5"
+F 6 "" H 9000 2000 50  0001 L BNN "Field6"
+F 7 "https://www.digikey.ca/product-detail/en/stmicroelectronics/USBLC6-2P6/497-5026-1-ND/1007464" H 9000 2000 50  0001 C CNN "Digikey"
 	1    9000 2000
 	1    0    0    -1  
 $EndComp
@@ -887,7 +888,8 @@ P 10800 4000
 F 0 "J12" H 10880 4042 50  0000 L CNN
 F 1 "UART0" H 10880 3951 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 10800 4000 50  0001 C CNN
-F 3 "~" H 10800 4000 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/M50-353.pdf" H 10800 4000 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/harwin-inc/M50-3530342/952-3599-ND/7044014" H 10800 4000 50  0001 C CNN "Digikey"
 	1    10800 4000
 	1    0    0    -1  
 $EndComp
@@ -898,7 +900,8 @@ P 10800 4400
 F 0 "J13" H 10880 4442 50  0000 L CNN
 F 1 "UART2" H 10880 4351 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 10800 4400 50  0001 C CNN
-F 3 "~" H 10800 4400 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/M50-353.pdf" H 10800 4400 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/harwin-inc/M50-3530342/952-3599-ND/7044014" H 10800 4400 50  0001 C CNN "Digikey"
 	1    10800 4400
 	1    0    0    -1  
 $EndComp
@@ -909,7 +912,8 @@ P 10800 4800
 F 0 "J14" H 10880 4842 50  0000 L CNN
 F 1 "UART4" H 10880 4751 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 10800 4800 50  0001 C CNN
-F 3 "~" H 10800 4800 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/M50-353.pdf" H 10800 4800 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/harwin-inc/M50-3530342/952-3599-ND/7044014" H 10800 4800 50  0001 C CNN "Digikey"
 	1    10800 4800
 	1    0    0    -1  
 $EndComp
@@ -920,7 +924,8 @@ P 10800 5200
 F 0 "J15" H 10880 5242 50  0000 L CNN
 F 1 "I2C1" H 10880 5151 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 10800 5200 50  0001 C CNN
-F 3 "~" H 10800 5200 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/M50-353.pdf" H 10800 5200 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/harwin-inc/M50-3530342/952-3599-ND/7044014" H 10800 5200 50  0001 C CNN "Digikey"
 	1    10800 5200
 	1    0    0    -1  
 $EndComp
@@ -931,7 +936,8 @@ P 10800 5600
 F 0 "J16" H 10880 5642 50  0000 L CNN
 F 1 "I2C2" H 10880 5551 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 10800 5600 50  0001 C CNN
-F 3 "~" H 10800 5600 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/M50-353.pdf" H 10800 5600 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/harwin-inc/M50-3530342/952-3599-ND/7044014" H 10800 5600 50  0001 C CNN "Digikey"
 	1    10800 5600
 	1    0    0    -1  
 $EndComp
@@ -1047,7 +1053,8 @@ P 9650 3100
 F 0 "J11" H 9700 3417 50  0000 C CNN
 F 1 "SPI1" H 9700 3326 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical_SMD" H 9650 3100 50  0001 C CNN
-F 3 "~" H 9650 3100 50  0001 C CNN
+F 3 "https://s3.amazonaws.com/catalogspreads-pdf/PAGE94-95%20.050%20MALE%20HDR%20ST%20RA%20SMT.pdf" H 9650 3100 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/sullins-connector-solutions/GRPB032VWQS-RC/S9012E-03-ND/1786412" H 9650 3100 50  0001 C CNN "Digikey"
 	1    9650 3100
 	1    0    0    -1  
 $EndComp

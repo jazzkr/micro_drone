@@ -28,7 +28,7 @@ P 1550 2500
 F 0 "SW1" V 1596 2452 50  0000 R CNN
 F 1 "ESP_RESET" V 1505 2452 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 1550 2700 50  0001 C CNN
-F 3 "~" H 1550 2700 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf" H 1550 2700 50  0001 C CNN
 F 4 "https://www.digikey.ca/product-detail/en/omron-electronics-inc-emc-div/B3U-1000P/SW1020CT-ND/1534357" H 1550 2500 50  0001 C CNN "Digikey"
 	1    1550 2500
 	0    -1   -1   0   
@@ -65,6 +65,7 @@ F 0 "U8" H 6100 3600 50  0000 C CNN
 F 1 "ESP-12F" H 6850 3600 50  0000 C CNN
 F 2 "RF_Module:ESP-12E" H 6550 4250 50  0001 C CNN
 F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 6200 4350 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/adafruit-industries-llc/2491/1528-1438-ND/5761206" H 6550 4250 50  0001 C CNN "Digikey"
 	1    6550 4250
 	1    0    0    -1  
 $EndComp
@@ -125,7 +126,7 @@ P 2100 3000
 F 0 "SW2" V 2146 2952 50  0000 R CNN
 F 1 "ESP_GPIO0" V 2055 2952 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 2100 3200 50  0001 C CNN
-F 3 "~" H 2100 3200 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf" H 2100 3200 50  0001 C CNN
 F 4 "https://www.digikey.ca/product-detail/en/omron-electronics-inc-emc-div/B3U-1000P/SW1020CT-ND/1534357" H 2100 3000 50  0001 C CNN "Digikey"
 	1    2100 3000
 	0    -1   -1   0   

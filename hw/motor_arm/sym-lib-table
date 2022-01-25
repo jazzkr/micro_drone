@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name EFM8BB21F16I-C-QFN20)(type Legacy)(uri ${KIPRJMOD}/lib/EFM8BB21F16I-C-QFN20/EFM8BB21F16I-C-QFN20.lib)(options "")(descr ""))
   (lib (name Custom)(type Legacy)(uri ${KIPRJMOD}/lib/Custom.lib)(options "")(descr ""))
+  (lib (name motor_arm-rescue)(type Legacy)(uri ${KIPRJMOD}/motor_arm-rescue.lib)(options "")(descr ""))
 )

@@ -23,6 +23,7 @@ F 0 "U3" H 2421 5846 50  0000 R CNN
 F 1 "BME280" H 2421 5755 50  0000 R CNN
 F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 4350 5350 50  0001 C CNN
 F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf" H 2850 5600 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/bosch-sensortec/BME280/828-1063-1-ND/6136314" H 2850 5800 50  0001 C CNN "Digikey"
 	1    2850 5800
 	1    0    0    -1  
 $EndComp
@@ -124,6 +125,7 @@ F 0 "U10" H 3000 1850 50  0000 C CNN
 F 1 "ICM-20948" H 3600 1850 50  0000 C CNN
 F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 3350 1500 50  0001 C CNN
 F 3 "http://www.invensense.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf" H 3350 2350 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/tdk-invensense/ICM-20948/1428-1123-1-ND/7062698" H 3350 2500 50  0001 C CNN "Digikey"
 	1    3350 2500
 	1    0    0    -1  
 $EndComp
@@ -265,6 +267,7 @@ F 0 "U11" H 8200 2165 50  0000 C CNN
 F 1 "VL53L1X" H 8200 2074 50  0000 C CNN
 F 2 "Sensor_Distance:ST_VL53L1x" H 7850 2050 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/vl53l1x.pdf" H 7850 2050 50  0001 C CNN
+F 4 "https://www.digikey.ca/product-detail/en/stmicroelectronics/VL53L1CXV0FY-1/497-17764-1-ND/8276742" H 7800 2000 50  0001 C CNN "Digikey"
 	1    7800 2000
 	1    0    0    -1  
 $EndComp

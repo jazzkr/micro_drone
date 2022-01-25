@@ -782,7 +782,7 @@ Wire Wire Line
 Wire Wire Line
 	10550 2300 10850 2300
 $Comp
-L Custom:AP7370-33W5-7 U1
+L motor_arm-rescue:AP7370-33W5-7-Custom U1
 U 1 1 5EBE3C3B
 P 2150 1050
 F 0 "U1" H 2150 1415 50  0000 C CNN
@@ -857,7 +857,7 @@ Text GLabel 3200 4400 2    50   Input ~ 0
 vdA
 Text GLabel 3200 4500 2    50   Input ~ 0
 vdC
-Text GLabel 2650 4050 2    50   Input ~ 0
+Text GLabel 3200 4300 2    50   Input ~ 0
 VirtualGnd
 Wire Wire Line
 	3200 4400 3050 4400
@@ -1298,7 +1298,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 1200 5750 1200
 $Comp
-L Custom:MIC4604YMT U12
+L motor_arm-rescue:MIC4604YMT-Custom U12
 U 1 1 5EC14DDB
 P 4550 2700
 F 0 "U12" H 4575 3331 50  0000 C CNN
@@ -1309,7 +1309,7 @@ F 3 "" H 4650 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Custom:MIC4604YMT U13
+L motor_arm-rescue:MIC4604YMT-Custom U13
 U 1 1 5EC156C7
 P 7350 4800
 F 0 "U13" H 7375 5431 50  0000 C CNN
@@ -1320,7 +1320,7 @@ F 3 "" H 7450 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Custom:MIC4604YMT U14
+L motor_arm-rescue:MIC4604YMT-Custom U14
 U 1 1 5EC252BD
 P 4650 6300
 F 0 "U14" H 4675 6931 50  0000 C CNN
